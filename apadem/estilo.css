@@ -1,0 +1,385 @@
+/* estilos base de la página y de inicio */
+body {
+    background: #eef8fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.banner {
+    background-color: #2166ff;
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.gradiente-animado {
+    background: linear-gradient(90deg, #2166ff, #11c6e9);
+    padding: 30px 20px !important;
+    transition: background 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.gradiente-animado:hover {
+    background: linear-gradient(90deg, #11c6e9, #2166ff);
+    transform: scale(1.04); /* se agranda un poquito la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(17, 198, 233, 0.4);
+}
+
+.lista-servicios ul li {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
+
+/* tarjeta de la colecta */
+.card-colecta {
+    background-color: #d7ffac !important;
+    border: 2px solid #76cb1d !important;
+}
+
+.colecta-llamado {
+    color: #0b3a02 !important;
+}
+
+.colecta-titulo {
+    color: #051e01 !important;
+    letter-spacing: 1px;
+}
+
+.colecta-descripcion {
+    color: #16460c !important;
+    max-width: 700px;
+}
+
+.btn-colecta-donar {
+    background-color: #116606 !important;
+    color: #ffffff !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-colecta-donar:hover {
+    background-color: #062b01 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(13, 84, 3, 0.4) !important;
+}
+
+.imagen-galeria {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.5s ease;
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.04); /* se agranda un poquito la tarjeta al pasar el mouse */
+    box-shadow: 0 15px 30px rgba(33, 102, 255, 0.15);
+    filter: brightness(1.03);
+}
+
+.btn-apadem {
+    background: #2166ff;
+    color: white;
+}
+
+.btn-apadem:hover {
+    background: #144fd8;
+    color: white;
+}
+
+/* cursor hand para tdos los elementos interactivos */
+.btn-apadem, button[type="submit"], button[type="reset"] {
+    cursor: pointer;
+}
+
+.footer {
+    background: #163b9b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* menú de navegación */
+.barra-navegacion-superior {
+    border-top: 3px solid #2d7dff;
+}
+
+.navbar-nav.nav-tabs {
+    background-color: #f1f3f5;
+    border-bottom: 1px solid #dee2e6;
+    padding-left: 20px;
+}
+
+.navbar-nav.nav-tabs .nav-link {
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    border-radius: 0;
+    padding: 12px 20px;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav.nav-tabs .nav-link i {
+    margin-right: 8px;
+    color: #495057;
+}
+
+.navbar-nav.nav-tabs .nav-link.active {
+    color: #2d7dff !important;
+    background-color: #ffffff !important;
+    border-color: #dee2e6 #dee2e6 #ffffff;
+    border-bottom: 4px solid #2d7dff !important;
+    font-weight: 500;
+}
+
+.navbar-nav.nav-tabs .nav-link.active i {
+    color: #2d7dff !important;
+}
+
+.navbar-nav.nav-tabs .nav-link:hover:not(.active) {
+    background-color: #dee2e6;
+    border-color: #ced4da;
+}
+
+/* contenedores y buscador */
+.contenedor-blanco-titulo, .contenedor-blanco-buscador {
+    background: #ffffff !important;
+    border: 1px solid #e3eefc !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(31, 63, 149, 0.02) !important;
+}
+
+.contenedor-blanco-titulo {
+    padding: 30px 40px !important;
+}
+
+.contenedor-blanco-buscador {
+    padding: 16px 24px !important;
+}
+
+.titulos {
+    color: #1f3f95;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.subtitulos {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.barra-busqueda-interior {
+    display: flex;
+    align-items: center;
+    background: #f1f3f5 !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 10px !important;
+    padding: 0 16px !important;
+    height: 48px !important;
+}
+
+.barra-busqueda-interior i {
+    color: #94a3b8 !important;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.barra-busqueda-interior .buscador {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 100%;
+    font-size: 15px;
+    color: #475569;
+    background: transparent !important;
+}
+
+.barra-busqueda-interior .buscador::placeholder {
+    color: #a0aec0;
+}
+
+/* estilos nuevos para el listado de pacientes */
+.contenedor-tabla {
+    background: #ffffff !important;
+    border: 1px solid #cfdff6 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+#tablaPacientes thead th {
+    background-color: #edf8fd;
+    color: #1f3f95;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 14px 16px;
+    border-bottom: 2px solid #cfdff6;
+}
+
+#tablaPacientes tbody td {
+    padding: 14px 16px;
+    color: #334155;
+    font-size: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.avatar-mini {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #2563eb;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.nombre-paciente-tabla {
+    color: #1f3f95;
+    font-weight: 600;
+}
+
+.etiqueta-tabla {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.tag-medicamento-mini {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    color: #2563eb;
+    background: #eff6ff;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.txt-tabla-info {
+    color: #475569;
+}
+
+/* botones de acción visibles */
+.btn-editar-lista {
+    background-color: #2563eb !important;
+    color: white !important;
+    font-weight: 500;
+    font-size: 13px !important;
+    padding: 5px 12px !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease;
+}
+
+.btn-editar-lista:hover {
+    background-color: #1d4ed8 !important;
+    transform: translateY(-1px);
+}
+
+.btn-eliminar-lista {
+    background-color: #dc2626 !important;
+    color: white !important;
+    font-weight: 500;
+    font-size: 13px !important;
+    padding: 5px 12px !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease;
+}
+
+.btn-eliminar-lista:hover {
+    background-color: #b91c1c !important;
+    transform: translateY(-1px);
+}
+
+/* para el form de editar pacientes */
+.input-apadem {
+    border-radius: 8px !important;
+    border: 1px solid #cfdff6 !important;
+    padding: 10px 12px;
+    transition: all 0.3s ease;
+}
+
+.input-apadem:focus {
+    border-color: #2166ff !important;
+    box-shadow: 0 0 0 0.25rem rgba(33, 102, 255, 0.25) !important;
+}
+
+.label-apadem {
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    margin-bottom: 6px;
+}
+
+.logo-titulo {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-titulo-sistema {
+    color: #1f3f95 !important;
+}
+
+/* encabezados y títulos con el color más oscuro */
+.encabezado-seccion-fuerte {
+    color: #1f3f95 !important;
+}
+
+/* sección responsiva */
+@media (max-width: 991.98px) {
+    .banner { padding: 35px 25px !important; }
+    .titulos { font-size: 28px !important; }
+    .contenedor-blanco-titulo { padding: 20px 25px !important; }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav.nav-tabs {
+        padding-left: 0 !important;
+        flex-direction: column !important;
+        background-color: transparent;
+        border-bottom: none;
+        gap: 6px;
+    }
+    .navbar-nav.nav-tabs .nav-link {
+        width: 100%;
+        border: 1px solid #dee2e6 !important;
+        border-radius: 8px !important;
+        padding: 12px 16px;
+    }
+    .navbar-nav.nav-tabs .nav-link.active { border-bottom: 4px solid #2d7dff !important; }
+    .banner { padding: 25px 20px !important; text-align: center; }
+    .contenedor-blanco-titulo { padding: 20px !important; text-align: center; }
+    .titulos { font-size: 24px !important; }
+    .contenedor-blanco-buscador { padding: 12px 16px !important; }
+    .barra-busqueda-interior { height: 44px !important; }
+    .gradiente-animado { padding: 25px 15px !important; }
+    .footer { padding: 15px; font-size: 14px; }
+}
+
+@media (max-width: 479.98px) {
+    .titulos { font-size: 20px !important; }
+    .subtitulos { font-size: 14px !important; }
+}
